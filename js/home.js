@@ -6,10 +6,7 @@ document.getElementById('add-Money')
        
         if ( pin === '1234') {
            const amount=document.getElementById('addAmount').value;
-           const blances=document.getElementById('blance').innerText;
-           let sum=0;
-           sum=amount+8400;
-           console.log(sum)
+            console.log(amount)
        
         } else {
             alert('Worng Bank acount and Pin')
