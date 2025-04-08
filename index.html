@@ -11,10 +11,11 @@
 
 <body>
     <main class="flex justify-center mt-10">
-        <div class="mockup-phone">
+        <div class="mockup-phone ">
             <div class="mockup-phone-camera"></div>
             <div class="bg-base-100 mockup-phone-display text-white grid place-content-center">
                 <!-- loging section -->
+               <form id="loging-form">
                 <div class=" w-90  hero bg-base-00 min-h-screen">
 
 
@@ -22,18 +23,20 @@
                         <div class="card-body">
                             <fieldset class="fieldset font-bold  text-black">
                                 <label class="text-xl text-black fieldset-label">Mobile Number</label>
-                                <input type="number" class=" h-15 rounded-4xl input" placeholder="Enter your number" />
+                                <input id="phone-number" required type="text" class=" bg-[#F4F5F7] h-15 rounded-4xl input" placeholder="Enter your number" autocomplete="off" />
                                 <label class="text-xl text-black fieldset-label">4 Digit Pin</label>
-                                <input type="password" class=" h-15  rounded-4xl input" placeholder="Enter 4 Digit Pin" />
-                                <button class=" h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Login</button>
+                                <input id="pass" type="password" class=" bg-[#F4F5F7] h-15  rounded-4xl input" placeholder="Enter 4 Digit Pin" required autocomplete="off"/>
+                                <button id="loginButton" class=" h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Login</button>
                             </fieldset>
                         </div>
                     </div>
 
                 </div>
+               </form>
             </div>
         </div>
     </main>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
