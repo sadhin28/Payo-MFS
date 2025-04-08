@@ -16,9 +16,9 @@
     <main class="flex justify-center mt-10">
         <div class="mockup-phone w-140">
             <div class="mockup-phone-camera"></div>
-            <div class="  w-full bg-gray-100 mockup-phone-display text-white grid place-content-center">
+            <div class="h-full  w-full bg-gray-100 mockup-phone-display text-white grid place-content-center">
                 <!-- Available balance -->
-                <div class="relative bottom-40 ">
+                <div class="">
                     <div class=" flex  items-center justify-around">
                         <div class="stats">
                             <div class=" p-3 flex items-center">
@@ -43,21 +43,35 @@
                 <div>
                    
                     <h1 class="text-black px-2 text-3xl font-bold">🔥 Welcome to Payooo!</h1>
+                    <br>
+                    <p class="px-2 text-black text-xl">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
                 
                 </div>
                <div class=" grid grid-cols-3 justify-around gap-5 py-10 pr-6 p-3 ">
-                <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/wallet1.png" alt="">Add Money</button>
+                <button id="addMoney" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/wallet1.png" alt="">Add Money</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/send1.png" alt="">Cashout</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/money1.png" alt="">Transfer Money</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/bonus1.png" alt="">Get Bonus</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/purse1.png" alt="">Pay Bill</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/transaction1.png" alt="">Transactions</button>
-               
-               
                </div>
-               
+              
+               <form id="loging-form " class="flex justify-center mt-10">
+                <div class=" mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class=" card-body ">
+                      <fieldset class="fieldset ">
+                        <label class="fieldset-label">Email</label>
+                        <input type="email" class="input" placeholder="Email" />
+                        <label class="fieldset-label">Password</label>
+                        <input type="password" class="input" placeholder="Password" />
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button class="btn btn-neutral mt-4">Login</button>
+                      </fieldset>
+                    </div>
+                  </div>
+               </form>
             </div>
-
+            
     </main>
 </body>
 
