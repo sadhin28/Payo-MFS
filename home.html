@@ -56,17 +56,31 @@
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/transaction1.png" alt="">Transactions</button>
                </div>
               
-               <form id="loging-form " class="flex justify-center mt-10">
+               <form id="loging-form " class="  flex justify-center">
                 <div class=" mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class=" card-body ">
-                      <fieldset class="fieldset ">
-                        <label class="fieldset-label">Email</label>
-                        <input type="email" class="input" placeholder="Email" />
-                        <label class="fieldset-label">Password</label>
-                        <input type="password" class="input" placeholder="Password" />
-                        <div><a class="link link-hover">Forgot password?</a></div>
-                        <button class="btn btn-neutral mt-4">Login</button>
-                      </fieldset>
+                    <div class="card-body ">
+                        <label class="text-xl text-black fieldset-label font-bold">Select A Bank</label>
+                        <fieldset class=" fieldset font-bold  text-black">
+                            <select class="select select-md text-xl  bg-[#F4F5F7] h-15 rounded-4xl ">
+                                <option disabled selected>Select back</option>
+                                <option>Sonali Bank</option>
+                                <option>Rupali Bank </option>
+                                <option>Agrani Bank </option>
+                                <option>Dutch-Bangla Bank </option>
+                                <option>Brac Bank </option>
+                                <option>Islami Bank Bangladesh </option>
+                                <option>First Security Islami Bank </option>
+                                <option>ICB Islamic Bank </option>
+                                <option>Shahjalal Islami Bank </option>
+                              </select>
+                            <label class="text-xl text-black fieldset-label">Bank Account Number</label>
+                            <input id="bankNumber" required type="text" class="  bg-[#F4F5F7] h-15 rounded-4xl input" placeholder="Enter 11 digit account number" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">Amount to Add</label>
+                            <input id="addAmount" required type="text" class=" bg-[#F4F5F7] h-15 rounded-4xl input" placeholder="Add Amount to withdraw" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">4 Digit Pin</label>
+                            <input id="pinNumber" type="password" class=" bg-[#F4F5F7] h-15  rounded-4xl input" placeholder="Enter 4 Digit Pin" required autocomplete="off"/>
+                            <button id="addMoney" class=" h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Add Money</button>
+                        </fieldset>
                     </div>
                   </div>
                </form>
