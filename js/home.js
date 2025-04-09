@@ -1,4 +1,11 @@
 
+document.getElementById('addMoney')
+    .addEventListener('click', function (event) {
+       event.preventDefault();
+        window.location.href= '/addmoney.html'
+    })
+
+
 document.getElementById('add-Money')
     .addEventListener('click', function (event) {
         event.preventDefault();
