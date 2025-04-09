@@ -1,15 +1,8 @@
 
-document.getElementById('addMoney')
-    .addEventListener('click', function (event) {
-       event.preventDefault();
-        window.location.href= '/addmoney.html'
-    })
-
-
 document.getElementById('add-Money')
     .addEventListener('click', function (event) {
         event.preventDefault();
-        const bankacount=document.getElementById('bankNumber');
+        // const bankacount=document.getElementById('bankNumber');
         const pin = document.getElementById('pinNumber').value;
        //varify pin number
         if ( pin === '1234') {
@@ -26,3 +19,5 @@ document.getElementById('add-Money')
             alert('Faild to add money,Try again')
         }
     })
+
+   

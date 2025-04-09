@@ -49,15 +49,16 @@
                 </div>
                <div class=" grid grid-cols-2 justify-around gap-5 py-10 pr-6 p-3 ">
                 <button id="addMoney" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/wallet1.png" alt="">Add Money</button>
-                <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/send1.png" alt="">Cashout</button>
+                <button id="Cashout" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/send1.png" alt="">Cashout</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/money1.png" alt="">Transfer Money</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/bonus1.png" alt="">Get Bonus</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/purse1.png" alt="">Pay Bill</button>
                 <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10" src="assets/transaction1.png" alt="">Transactions</button>
                </div>
               
-               <!-- <form id="loging-form " class="  flex justify-center">
-                <div class=" mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+               <form id="loging-form " class="  flex flex-col justify-center">
+                <!-- add money section -->
+                <div  class=" hidden  mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div class="card-body ">
                         <label class="text-xl text-black fieldset-label font-bold">Select A Bank</label>
                         <fieldset class=" fieldset font-bold  text-black">
@@ -82,12 +83,30 @@
                             <button id="add-Money" class=" h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Add Money</button>
                         </fieldset>
                     </div>
-                  </div>
-               </form> -->
+                </div>
+
+                <!-- Cashout section -->
+                <div class=" hidden mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body font-bold ">
+                            <label class="text-xl text-black fieldset-label">Agent Number</label>
+                            <input id="bankNumber" required type="text" class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input" placeholder="Enter 11 digit number" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">Enter amount to withdraw</label>
+                            <input id="add-Amount" required type="text" class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input" placeholder="Enter amount to withdraw" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">Pin Number</label>
+                            <input id="pin-Number" type="password" class=" text-black bg-[#F4F5F7] h-15  rounded-4xl input" placeholder="Enter 4 digit pin number" required autocomplete="off"/>
+                            <button id="Withdraw-Money" class=" text-white h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Withdraw Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+               </form>
             </div>
             
     </main>
+    <script src="js/rr.js"></script>
    <script src="js/home.js"></script>
+   <script src="js/cashOut.js"></script>
+   
 </body>
 
 </html>
