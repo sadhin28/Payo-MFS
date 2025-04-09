@@ -1,19 +1,4 @@
-function addM(){
-    let x=document.getElementById('Add-money');
-    if(x.style.display === "none"){
-        x.style.display='block';
-    }else{
-        x.style.display='none';
-    }
-}
-function cashO(){
-    let x=document.getElementById('cash-out');
-    if(x.style.display === "none"){
-        x.style.display='block';
-    }else{
-        x.style.display='none';
-    }
-}
+
 document.getElementById('add-Money')
     .addEventListener('click', function (event) {
         event.preventDefault();
