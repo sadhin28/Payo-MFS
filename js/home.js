@@ -15,6 +15,8 @@ document.getElementById('add-Money')
            console.log(newBlance);
             //step 6: update
            document.getElementById('blance').innerText= newBlance;
+           const bankac=document.getElementById('bankNumber').value;
+           alert('You have Received TK '+ amnt +' form '+ bankac+' . Fee Tk 0.00. Blance Tk '+ newBlance);
         } else {
             alert('Faild to add money,Try again')
         }
