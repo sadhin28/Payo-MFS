@@ -18,7 +18,10 @@ document.getElementById('Withdraw-Money')
         const egentNumbers=document.getElementById('egent-Number').value;
         const pp =document.createElement('p');
             pp.innerText=`Cash Out: ${amounts} TK to A/C:${egentNumbers}.New Blance: ${Widthraw}`;
-         
+            pp.classList.add('bg-yellow-400')
+            pp.style.padding='10px'
+            pp.style.color='black'
+           
             document.getElementById('Transaction-container').appendChild(pp);
 
         }   

@@ -16,7 +16,10 @@ document.getElementById('add-Money')
             const bankac = document.getElementById('bankNumber').value;
             const p =document.createElement('p');
             p.innerText=`Added: ${amount} TK From A/C:${bankac}.New Blance: ${newBlance}`;
-            
+            p.classList.add('bg-green-400');
+            p.style.padding='10px';
+            p.style.color='Black';
+            p.style.borderRadius='2px'
             document.getElementById('Transaction-container').appendChild(p);
         } else {
             alert('Faild to add money,Try again')
