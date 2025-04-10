@@ -2,6 +2,16 @@ document.getElementById('Withdraw-Money')
 .addEventListener('click',function(event){
     event.preventDefault();
   const cashPin = document.getElementById('cashpin').value;
+  const egentNumberss=Addbyid('egent-Number')
+  const amount =Addbyid('add-Amount')
+  if(isNaN(amount)){
+    alert('Withdraw Faild');
+    return;
+  }
+  if(isNaN(egentNumberss)){
+    alert('Withdraw Faild');
+    return;
+  }
     
     if(cashPin === "1234")
         {

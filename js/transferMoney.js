@@ -2,6 +2,19 @@ document.getElementById('Send-Money').addEventListener('click',function(event){
     event.preventDefault();
    const transferpin =document.getElementById('TransferPin').value;
 
+   const amount=Addbyid('Amount-to-Add');
+   const userAcountNumber=document.getElementById('User-Account-Number').value;
+   if(isNaN(amount)){
+    alert('Withdraw Faild');
+    return;
+  }
+  if(isNaN(userAcountNumber)){
+    alert('Withdraw Faild');
+    return;
+  }
+
+
+
     if(transferpin === "1234"){
         const amount=Addbyid('Amount-to-Add')
         const blances=getTextFieldValueById('blance')
