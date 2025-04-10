@@ -13,12 +13,19 @@ document.getElementById('transferMoney').addEventListener('click', function () {
   
 })
 
-
+document.getElementById('transaction-history')
+.addEventListener('click',function(){
+   showSectionById('Transaction-history')
+   
+})
 
 function showSectionById(id){
    document.getElementById('TransferMoney').classList.add('hidden');
-   document.getElementById('cash-out').classList.add('hidden')
-   document.getElementById('Add-money').classList.add('hidden')
+   document.getElementById('cash-out').classList.add('hidden');
+   document.getElementById('Add-money').classList.add('hidden');
+   document.getElementById('Transaction-history').classList.add('hidden');
    document.getElementById(id).classList.remove('hidden')
+ 
+   
    
 }
