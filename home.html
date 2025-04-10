@@ -59,7 +59,7 @@
                             src="assets/bonus1.png" alt="">Get Bonus</button>
                     <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
                             src="assets/purse1.png" alt="">Pay Bill</button>
-                    <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
+                    <button id="transaction-history" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
                             src="assets/transaction1.png" alt="">Transactions</button>
                 </div>
 
@@ -145,7 +145,10 @@
                     </div>
 
                     <!-- Transaction section -->
-
+                    <div class="hidden" id="transaction-history">
+                        <h2 class="text-5xl text-center text-black">Transactin History</h2>
+                        
+                    </div>
 
                 </form>
             </div>
@@ -157,7 +160,7 @@
     <script src="js/feature.js"></script>
     <script src="js/math.js"></script>
     <script src="js/transferMoney.js"></script>
-    <script src=""></script>
+    <script src="js/transaction.js"></script>
 
 </body>
 
