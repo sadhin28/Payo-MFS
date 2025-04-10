@@ -1,6 +1,7 @@
 function Addbyid(id){
    const values = document.getElementById(id).value;
-    return values;
+   const value=parseFloat(values)
+   return value;
 }
 
 function getTextFieldValueById(id){

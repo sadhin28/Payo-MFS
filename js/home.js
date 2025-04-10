@@ -9,14 +9,15 @@ document.getElementById('add-Money')
             //    const amount=document.getElementById('addAmount').value;
             const amount = Addbyid('addAmount')
             const blance = getTextFieldValueById('blance')
-            const amnt = parseFloat(amount);
-            const blnc = parseFloat(blance);
-            const newBlance = blnc + amnt;
-            console.log(newBlance);
+            const newBlance = blance + amount;
             //step 6: update
             document.getElementById('blance').innerText = newBlance;
+            
             const bankac = document.getElementById('bankNumber').value;
-            alert('You have Received TK ' + amnt + ' form ' + bankac + ' . Fee Tk 0.00. Blance Tk ' + newBlance);
+            const p =document.createElement('p');
+            p.innerText=`Added: ${amount} TK From A/C:${bankac}.New Blance: ${newBlance}`;
+            
+            document.getElementById('Transaction-container').appendChild(p);
         } else {
             alert('Faild to add money,Try again')
         }
