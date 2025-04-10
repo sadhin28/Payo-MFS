@@ -8,8 +8,7 @@ document.getElementById('add-Money')
         if (pin === '1234') {
             //    const amount=document.getElementById('addAmount').value;
             const amount = Addbyid('addAmount')
-            const blance = document.getElementById('blance').innerText;
-
+            const blance = getTextFieldValueById('blance')
             const amnt = parseFloat(amount);
             const blnc = parseFloat(blance);
             const newBlance = blnc + amnt;

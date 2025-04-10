@@ -1,11 +1,11 @@
 document.getElementById('Withdraw-Money')
 .addEventListener('click',function(event){
     event.preventDefault();
-    const pin=document.getElementById('pin-Number').value;
+    const pin=Addbyid('pin-Number');
     if(pin === '12345'){
-       const blances = document.getElementById('blance').innerText;  
+       const blances = getTextFieldValueById('blance')
         const blnc=parseFloat(blances);
-        const amnt =document.getElementById('add-Amount').value;
+        const amnt =Addbyid('add-Amount');
         const amounts=parseFloat(amnt);
         
         const Widthraw=blnc-amounts;
