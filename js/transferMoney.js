@@ -18,6 +18,10 @@ document.getElementById('Send-Money').addEventListener('click',function(event){
     if(transferpin === "1234"){
         const amount=Addbyid('Amount-to-Add')
         const blances=getTextFieldValueById('blance')
+        if(amount>blances){
+            alert('You do not have enough money to Transfer,Your Current Blance: '+blances);
+            return;
+        }
         const finalBlance=blances-amount;
         document.getElementById('blance').innerText=finalBlance; 
          //   add transaction history

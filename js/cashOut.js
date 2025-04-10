@@ -19,7 +19,10 @@ document.getElementById('Withdraw-Money')
         const blnc=parseFloat(blances);
         const amnt =Addbyid('add-Amount');
         const amounts=parseFloat(amnt);
-        
+        if(amounts>blnc){
+            alert('You do not have enough money to cash out');
+            return;
+        }
         const Widthraw=blnc-amounts;
         document.getElementById('blance').innerText=Widthraw;
         
