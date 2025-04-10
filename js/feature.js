@@ -19,3 +19,9 @@ document.getElementById('transferMoney').addEventListener('click', function () {
 
 })
 
+function showSectionById(id){
+   document.getElementById('TransferMoney').classList.add('hidden');
+   document.getElementById('cash-out').classList.add('hidden')
+   document.getElementById('Add-money').classList.add('hidden')
+   document.getElementById(id).classList.remove('hidden')
+}
