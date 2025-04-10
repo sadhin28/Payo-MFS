@@ -32,6 +32,10 @@ document.getElementById('add-Money')
             p.style.color='Black';
             p.style.borderRadius='2px'
             document.getElementById('Transaction-container').appendChild(p);
+            const date = new Date();
+            let currentDate = date.toLocaleDateString()
+document.getElementById("demo").innerHTML = currentDate;
+        
         } else {
             alert('Faild to add money,Try again')
         }

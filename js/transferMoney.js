@@ -31,8 +31,12 @@ document.getElementById('Send-Money').addEventListener('click',function(event){
             ppp.classList.add('bg-black')
             ppp.style.padding='10px'
             ppp.style.color='white'
+            const date = new Date();
+            let currentDates = date.toLocaleDateString()
+            document.getElementById("demo").innerHTML = currentDates;
             document.getElementById('Transaction-container').appendChild(ppp);
-
+            
+            
     }
     else{
         alert('Faild Transfer Money');

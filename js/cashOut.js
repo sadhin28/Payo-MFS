@@ -26,16 +26,19 @@ document.getElementById('Withdraw-Money')
         const Widthraw=blnc-amounts;
         document.getElementById('blance').innerText=Widthraw;
         
-        
+       
         //transaction history
         const egentNumbers=document.getElementById('egent-Number').value;
         const pp =document.createElement('p');
             pp.innerText=`Cash Out: ${amounts} TK to A/C:${egentNumbers}.New Blance: ${Widthraw}`;
             pp.classList.add('bg-yellow-400')
-            pp.style.padding='10px'
-            pp.style.color='black'
+            pp.style.padding='10px';
+            pp.style.color='black';
+            const date = new Date();
+            let currentDatess = date.toLocaleDateString()
+            document.getElementById("demo").innerHTML = currentDatess;
+            document.getElementById('Transaction-container').appendChild(pp)
            
-            document.getElementById('Transaction-container').appendChild(pp);
 
         }   
             else{
