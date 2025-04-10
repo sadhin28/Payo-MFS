@@ -19,7 +19,7 @@ document.getElementById('Send-Money').addEventListener('click',function(event){
         const amount=Addbyid('Amount-to-Add')
         const blances=getTextFieldValueById('blance')
         if(amount>blances){
-            alert('You do not have enough money to Transfer,Your Current Blance: '+blances);
+            alert('You do not have enough money to Transfer,Your Current Blance: '+blances +' TK');
             return;
         }
         const finalBlance=blances-amount;
