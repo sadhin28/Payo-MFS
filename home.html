@@ -66,6 +66,7 @@
                 <form id="loging-form " class="   flex flex-col justify-center mx-auto">
                     <!-- add money section -->
                     <div id="Add-money" class="  mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <label class="mt-3 pl-3 text-2xl text-black font-bold" for="text">Add Money</label>
                         <div class="card-body ">
                             <label class="text-xl text-black fieldset-label font-bold">Select A Bank</label>
                             <fieldset class="fieldset font-bold  text-black">
@@ -100,6 +101,7 @@
 
                     <!-- Cashout section -->
                     <div id="cash-out" class=" hidden mb-20  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <label class="mt-3 pl-3 text-2xl text-black font-bold" for="text">Cash Out</label>
                         <div class="card-body font-bold ">
                             <label class="text-xl text-black fieldset-label">Agent Number</label>
                             <input id="bankNumber" required type="text"
@@ -124,21 +126,20 @@
                     <div id="TransferMoney" class=" hidden mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <label class="mt-3 pl-3 text-2xl text-black font-bold" for="text">Transfer Money</label>
                         <div class="card-body font-bold ">
-                            <label class="text-xl text-black fieldset-label">Agent Number</label>
-                            <input id="bankNumber" required type="text"
+                            <label class="text-xl text-black fieldset-label">User Account Number</label>
+                            <input id="User-Account-Number" required type="text"
                                 class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input"
                                 placeholder="Enter 11 digit number" autocomplete="off" />
-                            <label class="text-xl text-black fieldset-label">Enter amount to withdraw</label>
-                            <input id="add-Amount" required type="text"
+                            <label class="text-xl text-black fieldset-label">Amount</label>
+                            <input id="Amount-to-Add" required type="text"
                                 class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input"
-                                placeholder="Enter amount to withdraw" autocomplete="off" />
+                                placeholder="Enter amount to transfer" autocomplete="off" />
                             <label class="text-xl text-black fieldset-label">Pin Number</label>
-                            <input id="pin-Number" type="password"
+                            <input id="Pin-Number" type="password"
                                 class=" text-black bg-[#F4F5F7] h-15  rounded-4xl input"
                                 placeholder="Enter 4 digit pin number" required autocomplete="off" />
-                            <button id="Withdraw-Money"
-                                class=" text-white h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Withdraw
-                                Money</button>
+                            <button id="Send-Money"
+                                class=" text-white h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Send Now</button>
                             </fieldset>
                         </div>
                     </div>
@@ -151,6 +152,7 @@
     <script src="js/cashOut.js"></script>
     <script src="js/feature.js"></script>
     <script src="js/math.js"></script>
+    <script src="js/transferMoney.js"></script>
 
 </body>
 
