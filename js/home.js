@@ -4,6 +4,17 @@ document.getElementById('add-Money')
         event.preventDefault();
         // const bankacount=document.getElementById('bankNumber');
         const pinnum = document.getElementById('pinNumber').value;
+        const bankac = document.getElementById('bankNumber').value;
+        const amount = Addbyid('addAmount')
+        if(isNaN(amount)){
+            alert('Faild to add money,Try again')
+            return;
+        }
+        if(isNaN(bankac)){
+            alert('Faild to add money,Try again')
+            return;
+        }
+        
         //varify pin number
         if(pinnum === "1234") {
             //    const amount=document.getElementById('addAmount').value;

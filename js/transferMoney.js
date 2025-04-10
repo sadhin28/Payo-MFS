@@ -5,11 +5,11 @@ document.getElementById('Send-Money').addEventListener('click',function(event){
    const amount=Addbyid('Amount-to-Add');
    const userAcountNumber=document.getElementById('User-Account-Number').value;
    if(isNaN(amount)){
-    alert('Withdraw Faild');
+    alert('Faild Transfer Money');
     return;
   }
   if(isNaN(userAcountNumber)){
-    alert('Withdraw Faild');
+    alert('Faild Transfer Money');
     return;
   }
 
