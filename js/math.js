@@ -8,3 +8,10 @@ function getTextFieldValueById(id){
     const textValue=parseFloat(TextValue);
     return textValue;
 }
+
+document.getElementById('loginbutton')
+.addEventListener('click',function(){
+  
+    // window.location.href='/index.html'
+    window.location.href='/index.html';
+})
