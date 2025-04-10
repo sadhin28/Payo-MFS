@@ -53,7 +53,7 @@
                             src="assets/wallet1.png" alt="">Add Money</button>
                     <button id="Cashout" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
                             src="assets/send1.png" alt="">Cashout</button>
-                    <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
+                    <button id="transferMoney" class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
                             src="assets/money1.png" alt="">Transfer Money</button>
                     <button class=" flex flex-col text-xl h-30 w-40 btn btn-xl"><img class="h-10"
                             src="assets/bonus1.png" alt="">Get Bonus</button>
@@ -99,7 +99,7 @@
                     </div>
 
                     <!-- Cashout section -->
-                    <div id="cash-out" class=" hidden mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out" class=" hidden mb-20  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body font-bold ">
                             <label class="text-xl text-black fieldset-label">Agent Number</label>
                             <input id="bankNumber" required type="text"
@@ -120,6 +120,28 @@
                         </div>
                     </div>
 
+                    <!-- Transfer money Section -->
+                    <div id="TransferMoney" class=" hidden mb-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <label class="mt-3 pl-3 text-2xl text-black font-bold" for="text">Transfer Money</label>
+                        <div class="card-body font-bold ">
+                            <label class="text-xl text-black fieldset-label">Agent Number</label>
+                            <input id="bankNumber" required type="text"
+                                class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input"
+                                placeholder="Enter 11 digit number" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">Enter amount to withdraw</label>
+                            <input id="add-Amount" required type="text"
+                                class=" text-black bg-[#F4F5F7] h-15 rounded-4xl input"
+                                placeholder="Enter amount to withdraw" autocomplete="off" />
+                            <label class="text-xl text-black fieldset-label">Pin Number</label>
+                            <input id="pin-Number" type="password"
+                                class=" text-black bg-[#F4F5F7] h-15  rounded-4xl input"
+                                placeholder="Enter 4 digit pin number" required autocomplete="off" />
+                            <button id="Withdraw-Money"
+                                class=" text-white h-15  btn bg-[#0874F2] mt-4 text-white font-bold rounded-4xl">Withdraw
+                                Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
                 </form>
             </div>
 
