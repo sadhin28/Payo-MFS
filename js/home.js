@@ -6,8 +6,9 @@ document.getElementById('add-Money')
         const pin = document.getElementById('pinNumber').value;
        //varify pin number
         if ( pin === '1234') {
-           const amount=document.getElementById('addAmount').value;
-           const blance= document.getElementById('blance').innerText;
+        //    const amount=document.getElementById('addAmount').value;
+        const amount= Addbyid('addAmount')   
+        const blance= document.getElementById('blance').innerText;
            
            const amnt=parseFloat(amount);
            const blnc=parseFloat(blance);
