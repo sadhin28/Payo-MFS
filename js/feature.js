@@ -1,14 +1,14 @@
-document.getElementById('addMoney').addEventListener('click',function(){
-    
+document.getElementById('addMoney').addEventListener('click', function () {
+
    document.getElementById('Add-money').classList.remove('hidden');
    document.getElementById('cash-out').classList.add('hidden')
-   
+
 })
-document.getElementById('Cashout').addEventListener('click',function(){
-    
+document.getElementById('Cashout').addEventListener('click', function () {
+
    document.getElementById('cash-out').classList.remove('hidden');
    document.getElementById('Add-money').classList.add('hidden')
-   
+
 })
 
 
