@@ -1,8 +1,10 @@
 document.getElementById('Withdraw-Money')
 .addEventListener('click',function(event){
     event.preventDefault();
-    const pin=Addbyid('pin-Number');
-    if(pin === '1234'){
+  const cashPin = document.getElementById('cashpin').value;
+    
+    if(cashPin === "1234")
+        {
        const blances = getTextFieldValueById('blance')
         const blnc=parseFloat(blances);
         const amnt =Addbyid('add-Amount');
@@ -10,11 +12,17 @@ document.getElementById('Withdraw-Money')
         
         const Widthraw=blnc-amounts;
         document.getElementById('blance').innerText=Widthraw;
-        const agentnumber=Addbyid('egent-Number')
-        const p =document.createElement('p');
-            p.innerText=`Cashout: ${amounts} TK Send To A/C:${agentnumber}.New Blance: ${Widthraw}`;
-    }   
-    else{
+        
+        
+        //transaction history
+        const egentNumbers=document.getElementById('egent-Number').value;
+        const pp =document.createElement('p');
+            pp.innerText=`Cash Out: ${amounts} TK to A/C:${egentNumbers}.New Blance: ${Widthraw}`;
+         
+            document.getElementById('Transaction-container').appendChild(pp);
+
+        }   
+            else{
         alert('Withdraw Faild')
     }
 })

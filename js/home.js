@@ -3,9 +3,9 @@ document.getElementById('add-Money')
     .addEventListener('click', function (event) {
         event.preventDefault();
         // const bankacount=document.getElementById('bankNumber');
-        const pin = document.getElementById('pinNumber').value;
+        const pinnum = document.getElementById('pinNumber').value;
         //varify pin number
-        if (pin === '1234') {
+        if(pinnum === "1234") {
             //    const amount=document.getElementById('addAmount').value;
             const amount = Addbyid('addAmount')
             const blance = getTextFieldValueById('blance')

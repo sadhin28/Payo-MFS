@@ -1,13 +1,19 @@
 document.getElementById('Send-Money').addEventListener('click',function(event){
     event.preventDefault();
-    const pin=Addbyid('Pin-Number')
+   const transferpin =document.getElementById('TransferPin').value;
 
-    if(pin === '12345'){
+    if(transferpin === "1234"){
         const amount=Addbyid('Amount-to-Add')
         const blances=getTextFieldValueById('blance')
         const finalBlance=blances-amount;
         document.getElementById('blance').innerText=finalBlance; 
-        alert('Transfer Tk '+ amount + ', Successfully')
+         //   add transaction history
+         const userAcountNumber=document.getElementById('User-Account-Number').value;
+        const ppp =document.createElement('p');
+            ppp.innerText=`Transfer: ${amount} TK to A/C:${userAcountNumber}.New Blance: ${finalBlance}`;
+            
+            document.getElementById('Transaction-container').appendChild(ppp);
+
     }
     else{
         alert('Faild Transfer Money');
